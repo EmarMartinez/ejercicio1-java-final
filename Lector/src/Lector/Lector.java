@@ -60,9 +60,11 @@ public class Lector {
                 return listaMenores25;
     }
 
+    int contador = 1;
     public void pintarPersonas(List<Persona> listaPersonas) {
-        int contador = 1;
+
         listaPersonas.stream()
-        .forEach(e -> System.out.println("Linea " + contador + ": Nombre: " + e.getNombre() + " Ciudad: " + e.getCiudad() + " Edad: " + e.getEdad()));
+        .forEach(e ->{ System.out.println("Linea " + contador + ": Nombre: " + e.getNombre() + " Ciudad: " + e.getCiudad() + " Edad: " + e.getEdad());
+        contador++;});
     }
 }
